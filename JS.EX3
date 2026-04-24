@@ -1,0 +1,30 @@
+let QUESTIONS = [
+    ["Quelle est Votre Nom?", "Wissal"],
+    ["Combien font 10+9 ?", "19"],
+    ["Quelle est la capitale de Maroc ?", "Rabat"]
+];
+
+function lancerQuiz() {
+
+    let score = 0;
+
+    for (let i = 0; i < QUESTIONS.length; i++) {
+
+        let question = QUESTIONS[i][0];
+        let bonneReponse = QUESTIONS[i][1];
+
+        let reponse = prompt(question);
+
+        if (reponse == bonneReponse) {
+            alert("Réponse juste");
+            score++;
+        }
+
+        else {
+            alert("Réponse fausse");
+        }
+    }
+
+    alert("Vous avez répondu correctement à " + score + 
+    " questions sur " + QUESTIONS.length);
+}
