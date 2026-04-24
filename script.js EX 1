@@ -1,0 +1,7 @@
+let n1 = parseFloat(prompt("Entrer le premier nombre : "));
+let n2 = parseFloat(prompt("Entrer le deuxième nombre : "));
+
+console.log("Somme = " + (n1 + n2));
+console.log("Différence = " + (n1 - n2));
+console.log("Produit = " + (n1 * n2));
+console.log("Quotient = " + (n1 / n2));
